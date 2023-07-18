@@ -23,7 +23,8 @@ Modify the Hardhat configuration file `hardhat.config.js` according to your spec
    ```bash
    npx hardhat compile
 
-   npx hardhat compile runs the built-in compile task.
+
+   The command npx hardhat compile runs the built-in compile task.
 
 5. Deploy the contract:
 
