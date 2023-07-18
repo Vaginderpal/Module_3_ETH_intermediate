@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@remix-project/remixd": "^0.6.16",
+    "hardhat": "^2.17.0"
+  }
+}
