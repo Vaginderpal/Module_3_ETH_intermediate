@@ -23,11 +23,15 @@ Modify the Hardhat configuration file `hardhat.config.js` according to your spec
    ```bash
    npx hardhat compile
 
+   npx hardhat compile runs the built-in compile task.
+
 5. Deploy the contract:
 
    ```bash
    npx hardhat run scripts/deploy.js --network localhost
 
+
+The command npx hardhat run scripts/deploy.js --network localhost is used to execute a deployment script in the Hardhat development environment
 
 ## Requirements 
 1. Token Contract: Implement a token contract in Solidity.
