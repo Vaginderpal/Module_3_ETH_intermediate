@@ -34,6 +34,27 @@ Modify the Hardhat configuration file `hardhat.config.js` according to your spec
 
 The command npx hardhat run scripts/deploy.js --network localhost is used to execute a deployment script in the Hardhat development environment
 
+## Functions 
+
+- `balances`: A public mapping that maps addresses to their respective token balances.
+
+- `owner`: An address variable that stores the address of the owner of the contract.
+
+- `onlyOwner()`: A custom modifier to ensure that only the owner can execute certain functions.
+
+- `constructor(string memory _name, string memory _symbol)`: The constructor function that initializes the contract with the provided token name and symbol. It also sets the contract creator as the owner.
+
+- `function mint(address _address, uint256 _value) public onlyOwner`: Allows the owner to mint new tokens and assign them to a specific address.
+
+- `function burn(address _address, uint256 _value) public`: Allows any address to burn (destroy) a specific number of their own tokens.
+
+- `function transfer(address _to, uint256 _value) public`: Allows any address to transfer tokens to another address.
+
+- `function getBalance(address _address) public view returns (uint256)`: Allows anyone to query the balance of a specific address.
+
+- `function changeOwner(address _newOwner) public onlyOwner`: Allows the current owner of the contract to transfer ownership to a new address.
+
+
 ## Requirements 
 1. Token Contract: Implement a token contract in Solidity.
 
